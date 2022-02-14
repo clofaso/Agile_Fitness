@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutLog">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workout Log"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/dark_indigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSearchWorkOut"
+        style="@style/attentionNoteStyle"
+        android:layout_width="383dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textviewSearchTOLookupWorkoutNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/editTextWorkOutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/TextViewWorkOutHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSearchWorkOut" />
+
+    <Button
+        android:id="@+id/buttonWorkoutSearch"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonSeachWorkOutNameLable"
+        app:layout_constraintStart_toEndOf="@+id/editTextWorkOutName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSearchWorkOut" />
+
+    <TextView
+        android:id="@+id/textViewWorkoutCategoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewWorkoutCategoryLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkOutName" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesBurnedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewCaloriesBurnedLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorkoutCategoryLabel" />
+
+    <TextView
+        android:id="@+id/textViewIntensityLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewIntensityLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaloriesBurnedLabel" />
+
+    <TextView
+        android:id="@+id/textViewDurationInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewDurationInMinutes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAverageHeartRate" />
+
+    <TextView
+        android:id="@+id/textViewGymEquipmentRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewGymEquipmentRequired"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDurationInMinutes" />
+
+    <TextView
+        android:id="@+id/textViewRiskLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewRiskLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGymEquipmentRequired" />
+
+    <TextView
+        android:id="@+id/textViewAverageHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewAverageHeartRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIntensityLevel" />
+
+    <TextView
+        android:id="@+id/textViewSpotterNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewSpotterNeeded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRiskLevel" />
+
+    <EditText
+        android:id="@+id/editTextWorkoutCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewWorkoutCategoryLabel"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkoutSearch" />
+
+    <EditText
+        android:id="@+id/editTextCaloriesBurned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewCaloriesBurnedLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkoutCategory" />
+
+    <EditText
+        android:id="@+id/editTextIntensityLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewIntensityLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCaloriesBurned" />
+
+    <EditText
+        android:id="@+id/editTextAverageHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewAverageHeartRate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIntensityLevel" />
+
+    <EditText
+        android:id="@+id/editTextDurationinMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewDurationInMinutes"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAverageHeartRate" />
+
+    <EditText
+        android:id="@+id/editTextGymEquipmentRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewGymEquipmentRequired"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDurationinMinutes" />
+
+    <EditText
+        android:id="@+id/editTextRiskLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewRiskLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGymEquipmentRequired" />
+
+    <EditText
+        android:id="@+id/editTextSpotterNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewSpotterNeeded"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRiskLevel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

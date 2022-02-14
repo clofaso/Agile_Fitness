@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_start">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="727dp">
+
+                <EditText
+                    android:id="@+id/editTextPTFirstName"
+                    android:layout_width="141dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:ems="10"
+                    android:hint="@string/enter_first_name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextPTLastName"
+                    app:layout_constraintHorizontal_bias="0.314"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextPTLastName"
+                    android:layout_width="152dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="44dp"
+                    android:ems="10"
+                    android:hint="@string/enter_last_name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextPTPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:hint="@string/phone_num"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTFirstName" />
+
+                <EditText
+                    android:id="@+id/editTextPTGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:ems="10"
+                    android:hint="@string/gender"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPTPhoneNumber" />
+
+                <EditText
+                    android:id="@+id/editTextPTAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:ems="10"
+                    android:hint="@string/availability"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTGender" />
+
+                <EditText
+                    android:id="@+id/editTextPTCertifications"
+                    android:layout_width="259dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:hint="@string/certifications"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTAvailability" />
+
+                <TextView
+                    android:id="@+id/textPTExPref"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="32dp"
+                    android:inputType="textPersonName"
+                    android:text="@string/pt_ex_pref"
+                    android:textColor="@color/dark_indigo"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTCertifications" />
+
+                <Spinner
+                    android:id="@+id/PrefWorkoutSpin"
+                    style="@style/Spinner"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintLeft_toRightOf="@id/textPTExPref"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTCertifications" />
+
+                <TextView
+                    android:id="@+id/textPTLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="20dp"
+                    android:inputType="textPersonName"
+                    android:text="@string/preferredLocation"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_indigo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/PrefWorkoutSpin" />
+
+                <EditText
+                    android:id="@+id/editPTLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:hint="Enter preferred location"
+                    android:textSize="18dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBaseline_toBaselineOf="@id/textPTLocation"
+                    app:layout_constraintLeft_toRightOf="@id/textPTLocation"
+                    app:layout_constraintTop_toBottomOf="@id/PrefWorkoutSpin"/>
+
+                <EditText
+                    android:id="@+id/editTextPTFacebookUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:ems="10"
+                    android:hint="@string/facebook_username"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editPTLocation" />
+
+                <Button
+                    android:id="@+id/buttonFinishPTRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/finish_reg"
+                    android:onClick="onClick"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPTFacebookUser" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

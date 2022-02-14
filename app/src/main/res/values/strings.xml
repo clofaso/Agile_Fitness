@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Agile Fitness</string>
+    <string name="textViewEnterUserPass">Please Enter Your Email and Password, then click "Login"</string>
+    <string name="buttonLogin">Login</string>
+    <string name="textViewCreateAcc">If you do not already have an account, please click "Create An Account" below to get started!</string>
+    <string name="user_login">Email</string>
+    <string name="pass_login">Password</string>
+    <string name="button_create">Create An Account</string>
+    <string name="login_success">You have been successfully logged in</string>
+    <string name="login_fail">Login failed, please try again</string>
+    <string name="enter_user">Please enter an email address to be used for this account</string>
+    <string name="enter_pass">Please enter a password to be used for this account</string>
+    <string name="enter_full_name">First and Last Name</string>
+    <string name="enter_first_name">First Name</string>
+    <string name="enter_last_name">Last Name</string>
+    <string name="availability">Availability</string>
+    <string name="pt_ex_pref">Exercise Preference</string>
+    <string name="certifications">Please list all Certifications</string>
+    <string name="up_progress">Check and Update Your Progress</string>
+    <string name="finish_pt">Register as a Personal Trainer</string>
+    <string name="finish_user">Register as a User</string>
+    <string name="facebook">Find a User On Facebook</string>
+    <string name="personal_data">Please fill out the data below, all data is optional and will be public!</string>
+    <string name="weight">Weight</string>
+    <string name="gender">Gender</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="diet_pref">Diet Type/Preference</string>
+    <string name="pref_workout_time">Preferred Workout Time</string>
+    <string name="facebook_username">Facebook Username</string>
+    <string name="warning">Before you register, your information will be public, please make sure your data is correct.</string>
+    <string name="finish_reg">Finish Registration</string>
+    <string name="connect_with_user">Connect!</string>
+    <string name="email_sub">Agile Fitness</string>
+    <string name="cal_event_name">Event Name</string>
+    <string name="cal_button_save">Save New Event</string>
+    <string name="user_connection_email">Hello! I saw your profile on AgileFitness and I would like to connect with you!</string>
+    <string name="pt_connection_email">Hello! I saw your profile on AgileFitness and I would like to train with you!</string>
+
+
+    <string-array name="preferredTimes">
+        <item></item>
+        <item>Early Morning</item>
+        <item>Late Morning</item>
+        <item>Midday</item>
+        <item>Early Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="dietPreferences">
+        <item>None</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Pescatarian</item>
+        <item>Paleolithic</item>
+    </string-array>
+
+    <string-array name="exercise_types">
+        <item></item>
+        <item>Athletic Training</item>
+        <item>Bodybuilding</item>
+        <item>Cardio Training</item>
+        <item>Strength/Conditioning</item>
+        <item>Weight loss transformation</item>
+        <item>Youth fitness</item>
+        <item>Senior fitness</item>
+    </string-array>
+    <string name="textviewSearchTOAddItemNote">You can search food items to add to it to the log or to see the items nutrition facts</string>
+    <string name="buttonSeachFoodItemNameLable">Search</string>
+
+    <string name="buttonAddFoodItemNameLabel">Add to Log</string>
+    <string name="buttonRemoveFoodItemNameLabel">Remove from Log</string>
+
+    <string name="TextViewCaloriesLabel">Calories</string>
+    <string name="TextViewCarbohydrateLabel">Carbohydrate</string>
+    <string name="TextViewFoodTypeLabel">Food Type</string>
+    <string name="TextViewProteinLabel">Protein</string>
+    <string name="TextViewSaturatedFatLabel">Saturated Fat</string>
+    <string name="TextViewSodiumLabel">Sodium</string>
+    <string name="TextViewSugarLabel">Sugar</string>
+
+    <string name="TextViewFoodTypeHint">Food Item Name</string>
+
+
+
+    <string name="textviewSearchTOLookupWorkoutNote">You can search workout type to see facts about that workout type</string>
+    <string name="TextViewWorkOutHint">Workout Name</string>
+    <string name="buttonSeachWorkOutNameLable">Search</string>
+
+    <string name="textViewWorkoutCategoryLabel">Workout Category</string>
+    <string name="textViewCaloriesBurnedLabel">Calories Burned</string>
+    <string name="textViewIntensityLevel">Intensity Level</string>
+    <string name="textViewAverageHeartRate">Average Heart Rate</string>
+    <string name="textViewDurationInMinutes">Duration in Minutes</string>
+    <string name="textViewGymEquipmentRequired">Gym Equipment Required</string>
+    <string name="textViewRiskLevel">Risk Level</string>
+    <string name="textViewSpotterNeeded">Spotter Needed</string>
+    <string name="preferredLocation">Preferred Workout Location</string>
+
+    <string name="menuItem_NutrtionLogDisplay">Display Nutrtion Log</string>
+    <string name="menuItem_AddToNutrtionLog">Add to Nutrtion Log</string>
+    <string name="menuItem_SearchNutrtionFacts">Search Nutrtion Facts</string>
+    <string name="textViewAddToNutrtionLogLabel">Add to Nutrition Log</string>
+
+</resources>

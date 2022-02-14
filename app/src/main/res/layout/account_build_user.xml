@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="727dp"
+                android:background="@drawable/background_gradient_center">
+
+                <EditText
+                    android:id="@+id/editTextFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="30dp"
+                    android:ems="8"
+                    android:hint="@string/enter_first_name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/editTextLastName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="8"
+                    android:hint="@string/enter_last_name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/editTextFirstName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewPersonalData"
+                    style="@style/noteStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/personal_data"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_indigo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextLastName" />
+
+                <EditText
+                    android:id="@+id/editTextUserWeight"
+                    android:layout_width="128dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="@string/weight"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@id/editTextUserHeightFt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewPersonalData" />
+
+                <EditText
+                    android:id="@+id/editTextUserHeightFt"
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Ft."
+                    android:inputType="number"
+                    app:layout_constraintStart_toEndOf="@id/editTextUserWeight"
+                    app:layout_constraintTop_toBottomOf="@id/textViewPersonalData" />
+
+                <EditText
+                    android:id="@+id/editTextUserHeightIn"
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="In."
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.112"
+                    app:layout_constraintStart_toEndOf="@id/editTextUserHeightFt"
+                    app:layout_constraintTop_toBottomOf="@id/textViewPersonalData" />
+
+                <EditText
+                    android:id="@+id/editTextUserGender"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/gender"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toStartOf="@id/editTextPhoneNum"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextUserWeight" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="@string/phone_num"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/editTextUserGender"
+                    app:layout_constraintTop_toBottomOf="@id/editTextUserWeight" />
+
+                <TextView
+                    android:id="@+id/textViewPrefWork"
+                    style="@style/InfoLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pref_workout_time"
+                    android:textColor="@color/dark_indigo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPhoneNum" />
+
+                <Spinner
+                    android:id="@+id/PrefWorkoutSpin"
+                    style="@style/Spinner"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintStart_toEndOf="@id/textViewPrefWork"
+                    app:layout_constraintTop_toBottomOf="@id/editTextPhoneNum" />
+
+                <TextView
+                    android:id="@+id/textViewDietPref"
+                    style="@style/InfoLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/diet_pref"
+                    android:textColor="@color/dark_indigo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPrefWork" />
+
+                <Spinner
+                    android:id="@+id/dietPrefSpin"
+                    style="@style/Spinner"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewDietPref"
+                    app:layout_constraintTop_toBottomOf="@id/PrefWorkoutSpin" />
+
+                <TextView
+                    android:id="@+id/textViewGymLocation"
+                    style="@style/InfoLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/preferredLocation"
+                    android:textColor="@color/dark_indigo"
+                    app:layout_constraintBaseline_toBaselineOf="@id/editTextGymLocation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDietPref" />
+
+                <EditText
+                    android:id="@+id/editTextGymLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Your Gym Location"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewGymLocation"
+                    app:layout_constraintTop_toBottomOf="@id/textViewDietPref" />
+
+                <EditText
+                    android:id="@+id/editTextFaceUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/facebook_username"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextGymLocation" />
+
+                <TextView
+                    android:id="@+id/textViewWarning"
+                    style="@style/attentionNoteStyle"
+                    android:layout_width="346dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/warning"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editTextFaceUser" />
+
+                <Button
+                    android:id="@+id/buttonFinishRegis"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/finish_reg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textViewWarning" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
